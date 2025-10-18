@@ -63,7 +63,10 @@
     } catch (err) {
       // last resort, keep original svg as src
       imgEl.src = svgPath;
-      console.warn("hero-image: failed to create PNG from SVG, using SVG directly", err);
+      console.warn(
+        "hero-image: failed to create PNG from SVG, using SVG directly",
+        err
+      );
     }
   }
 
