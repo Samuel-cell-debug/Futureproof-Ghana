@@ -1,0 +1,26 @@
+{
+    "name": "Futureproof Ghana Microsite",
+    "image": "mcr.microsoft.com/vscode/devcontainers/javascript-node:18",
+    "forwardPorts": [3000, 5500],
+    "postCreateCommand": "npm install",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "esbenp.prettier-vscode",
+                "ms-vscode.live-server",
+                "bradlc.vscode-tailwindcss"
+            ],
+            "settings": {
+                "editor.formatOnSave": true,
+                "editor.defaultFormatter": "esbenp.prettier-vscode"
+            }
+        }
+    },
+    "portsAttributes": {
+        "3000": {
+            "label": "Futureproof Ghana",
+            "onAutoForward": "openPreview"
+        }
+    },
+    "postAttachCommand": "npm start"
+}
