@@ -1,13 +1,15 @@
 {
-    "name": "futureproof-ghana",
-    "version": "1.0.0",
-    "description": "Futureproof Ghana Microsite - Small Actions, Big Impact",
-    "main": "index.html",
-    "scripts": {
-        "start": "live-server --port=3000 --host=0.0.0.0",
-        "dev": "live-server --port=3000 --host=0.0.0.0 --watch=styles,js"
-    },
-    "devDependencies": {
-        "live-server": "^1.2.2"
-    }
+  "name": "futureproof-ghana",
+  "version": "1.0.0",
+  "description": "Futureproof Ghana Microsite - Small Actions, Big Impact",
+  "main": "index.html",
+  "scripts": {
+    "start": "live-server --port=3000 --host=0.0.0.0",
+    "dev": "live-server --port=3000 --host=0.0.0.0 --watch=styles,js",
+    "test:e2e": "node tests/e2e/certificate.e2e.js"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "puppeteer": "^21.3.8"
+  }
 }

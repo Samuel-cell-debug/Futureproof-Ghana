@@ -1,565 +1,689 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Futureproof Ghana - Small Actions, Big Impact</title>
-    <meta name="description" content="Join Futureproof Ghana - Small actions creating big impact across Ghana. Community challenges, leaderboards, and certificates.">
-    
+    <meta
+      name="description"
+      content="Join Futureproof Ghana - Small actions creating big impact across Ghana. Community challenges, leaderboards, and certificates."
+    />
+
     <!-- CSS -->
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
     <!-- Loading Spinner -->
     <div id="loading-spinner">
-        <div class="spinner"></div>
-        <p>Loading Futureproof Ghana...</p>
+      <div class="spinner"></div>
+      <p>Loading Futureproof Ghana...</p>
     </div>
 
     <!-- Back to Top Button -->
     <button id="back-to-top" aria-label="Back to top">
-        <i class="fas fa-chevron-up"></i>
+      <i class="fas fa-chevron-up"></i>
     </button>
 
     <!-- Navigation -->
     <nav id="main-nav">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <i class="fas fa-seedling"></i>
-                Futureproof Ghana
-            </div>
-            <button class="mobile-menu-btn" aria-label="Toggle menu">
-                <i class="fas fa-bars"></i>
-            </button>
-            <ul class="nav-links">
-                <li><a href="#hero" class="nav-link active">Home</a></li>
-                <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
-                <li><a href="#current-challenges" class="nav-link">Challenges</a></li>
-                <li><a href="#community-projects" class="nav-link">Projects</a></li>
-                <li><a href="#leaderboard" class="nav-link">Leaderboard</a></li>
-                <li><a href="#certificate-generator" class="nav-link">Certificates</a></li>
-                <li><a href="#testimonials" class="nav-link">Stories</a></li>
-                <li><a href="#signup" class="cta-button nav-cta">Join Now</a></li>
-                <li><a href="#login" class="nav-link" id="login-trigger">Login</a></li>
-            </ul>
+      <div class="nav-container">
+        <div class="nav-logo">
+          <i class="fas fa-seedling"></i>
+          Futureproof Ghana
         </div>
+        <button class="mobile-menu-btn" aria-label="Toggle menu">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-links">
+          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+          <li><a href="#current-challenges" class="nav-link">Challenges</a></li>
+          <li><a href="#community-projects" class="nav-link">Projects</a></li>
+          <li><a href="#leaderboard" class="nav-link">Leaderboard</a></li>
+          <li>
+            <a href="#certificate-generator" class="nav-link">Certificates</a>
+          </li>
+          <li><a href="#testimonials" class="nav-link">Stories</a></li>
+          <li><a href="#signup" class="cta-button nav-cta">Join Now</a></li>
+          <li>
+            <a href="#login" class="nav-link" id="login-trigger">Login</a>
+          </li>
+        </ul>
+      </div>
     </nav>
 
     <!-- Header Section -->
     <header id="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1 class="logo">FUTUREPROOF GHANA</h1>
-                <p class="tagline">Small actions. Big impact. One Ghana.</p>
-                <p class="hero-description">Join thousands of Ghanaians making a difference in their communities through simple, impactful actions.</p>
-                
-                <div class="impact-stats">
-                    <div class="stat">
-                        <div class="stat-number" data-target="12583">0</div>
-                        <div class="stat-label">Actions Completed</div>
-                    </div>
-                    <div class="stat">
-                        <div class="stat-number" data-target="4892">0</div>
-                        <div class="stat-label">Active Participants</div>
-                    </div>
-                    <div class="stat">
-                        <div class="stat-number">16</div>
-                        <div class="stat-label">Regions Impacted</div>
-                    </div>
-                </div>
-                
-                <div class="hero-actions">
-                    <a href="#signup" class="cta-button primary">Join the Challenge</a>
-                    <a href="#how-it-works" class="cta-button secondary">Learn More</a>
-                </div>
-            </div>
+      <div class="container">
+        <div class="hero-illustration">
+          <img
+            id="hero-img"
+            src="assets/images/hero.png"
+            alt=""
+            aria-hidden="true"
+          />
         </div>
+        <div class="hero-content">
+          <h1 class="logo">FUTUREPROOF GHANA</h1>
+          <p class="tagline">Small actions. Big impact. One Ghana.</p>
+          <p class="hero-description">
+            Join thousands of Ghanaians making a difference in their communities
+            through simple, impactful actions.
+          </p>
+
+          <div class="impact-stats">
+            <div class="stat">
+              <div class="stat-number" data-target="12583">0</div>
+              <div class="stat-label">Actions Completed</div>
+            </div>
+            <div class="stat">
+              <div class="stat-number" data-target="4892">0</div>
+              <div class="stat-label">Active Participants</div>
+            </div>
+            <div class="stat">
+              <div class="stat-number">16</div>
+              <div class="stat-label">Regions Impacted</div>
+            </div>
+          </div>
+
+          <div class="hero-actions">
+            <a href="#signup" class="cta-button primary">Join the Challenge</a>
+            <a href="#how-it-works" class="cta-button secondary">Learn More</a>
+          </div>
+        </div>
+      </div>
     </header>
 
     <!-- How It Works Section -->
     <section id="how-it-works" class="section">
-        <div class="container">
-            <h2>How It Works in 3 Simple Steps</h2>
-            <p class="section-subtitle">Join thousands of Ghanaians making a difference in their communities</p>
-            
-            <div class="steps-container">
-                <div class="step">
-                    <div class="step-icon">
-                        <i class="fas fa-user-plus"></i>
-                    </div>
-                    <div class="step-number">1</div>
-                    <h3>Sign Up Free</h3>
-                    <p>Create your account in 60 seconds. No experience required.</p>
-                </div>
-                
-                <div class="step">
-                    <div class="step-icon">
-                        <i class="fas fa-tasks"></i>
-                    </div>
-                    <div class="step-number">2</div>
-                    <h3>Take Action</h3>
-                    <p>Join challenges that fit your schedule. 30 minutes can make a difference.</p>
-                </div>
-                
-                <div class="step">
-                    <div class="step-icon">
-                        <i class="fas fa-trophy"></i>
-                    </div>
-                    <div class="step-number">3</div>
-                    <h3>Earn Recognition</h3>
-                    <p>Get badges, climb leaderboards, and earn verifiable certificates.</p>
-                </div>
+      <div class="container">
+        <h2>How It Works in 3 Simple Steps</h2>
+        <p class="section-subtitle">
+          Join thousands of Ghanaians making a difference in their communities
+        </p>
+
+        <div class="steps-container">
+          <div class="step">
+            <div class="step-icon">
+              <i class="fas fa-user-plus"></i>
             </div>
+            <div class="step-number">1</div>
+            <h3>Sign Up Free</h3>
+            <p>Create your account in 60 seconds. No experience required.</p>
+          </div>
+
+          <div class="step">
+            <div class="step-icon">
+              <i class="fas fa-tasks"></i>
+            </div>
+            <div class="step-number">2</div>
+            <h3>Take Action</h3>
+            <p>
+              Join challenges that fit your schedule. 30 minutes can make a
+              difference.
+            </p>
+          </div>
+
+          <div class="step">
+            <div class="step-icon">
+              <i class="fas fa-trophy"></i>
+            </div>
+            <div class="step-number">3</div>
+            <h3>Earn Recognition</h3>
+            <p>
+              Get badges, climb leaderboards, and earn verifiable certificates.
+            </p>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Current Challenges Section -->
     <section id="current-challenges" class="section bg-light">
-        <div class="container">
-            <h2>Current Community Challenges</h2>
-            <p class="section-subtitle">Join these ongoing initiatives. No signup required to browse!</p>
-            
-            <div class="challenges-grid">
-                <div class="challenge-card">
-                    <div class="challenge-image" style="background: linear-gradient(135deg, #4CAF50, #45a049);"></div>
-                    <div class="challenge-content">
-                        <h3 class="challenge-title">Community Cleanup Initiative</h3>
-                        <p>Help clean up public spaces in your neighborhood. Perfect for beginners!</p>
-                        <div class="challenge-meta">
-                            <span><i class="fas fa-clock"></i> 2 hours weekly</span>
-                            <span><i class="fas fa-map-marker-alt"></i> Nationwide</span>
-                        </div>
-                        <div class="challenge-participants">
-                            <div class="participant-avatars">
-                                <div class="participant-avatar">A</div>
-                                <div class="participant-avatar">K</div>
-                                <div class="participant-avatar">+124</div>
-                            </div>
-                            <span>126 participants</span>
-                        </div>
-                        <button class="cta-button join-challenge">Join Challenge</button>
-                    </div>
+      <div class="container">
+        <h2>Current Community Challenges</h2>
+        <p class="section-subtitle">
+          Join these ongoing initiatives. No signup required to browse!
+        </p>
+
+        <div class="challenges-grid">
+          <div class="challenge-card">
+            <div
+              class="challenge-image"
+              style="background: linear-gradient(135deg, #4caf50, #45a049)"
+            ></div>
+            <div class="challenge-content">
+              <h3 class="challenge-title">Community Cleanup Initiative</h3>
+              <p>
+                Help clean up public spaces in your neighborhood. Perfect for
+                beginners!
+              </p>
+              <div class="challenge-meta">
+                <span><i class="fas fa-clock"></i> 2 hours weekly</span>
+                <span><i class="fas fa-map-marker-alt"></i> Nationwide</span>
+              </div>
+              <div class="challenge-participants">
+                <div class="participant-avatars">
+                  <div class="participant-avatar">A</div>
+                  <div class="participant-avatar">K</div>
+                  <div class="participant-avatar">+124</div>
                 </div>
-                
-                <div class="challenge-card">
-                    <div class="challenge-image" style="background: linear-gradient(135deg, #2196F3, #0b7dda);"></div>
-                    <div class="challenge-content">
-                        <h3 class="challenge-title">Tree Planting Campaign</h3>
-                        <p>Plant and nurture trees in your community. Make Ghana greener!</p>
-                        <div class="challenge-meta">
-                            <span><i class="fas fa-clock"></i> 1 hour weekly</span>
-                            <span><i class="fas fa-map-marker-alt"></i> 12 Regions</span>
-                        </div>
-                        <div class="challenge-participants">
-                            <div class="participant-avatars">
-                                <div class="participant-avatar">M</div>
-                                <div class="participant-avatar">E</div>
-                                <div class="participant-avatar">+89</div>
-                            </div>
-                            <span>91 participants</span>
-                        </div>
-                        <button class="cta-button join-challenge">Join Challenge</button>
-                    </div>
-                </div>
-                
-                <div class="challenge-card">
-                    <div class="challenge-image" style="background: linear-gradient(135deg, #FF6B35, #FF8E53);"></div>
-                    <div class="challenge-content">
-                        <h3 class="challenge-title">Digital Literacy Program</h3>
-                        <p>Teach digital skills to community members. Help bridge the digital divide.</p>
-                        <div class="challenge-meta">
-                            <span><i class="fas fa-clock"></i> 3 hours weekly</span>
-                            <span><i class="fas fa-map-marker-alt"></i> Urban Areas</span>
-                        </div>
-                        <div class="challenge-participants">
-                            <div class="participant-avatars">
-                                <div class="participant-avatar">D</div>
-                                <div class="participant-avatar">T</div>
-                                <div class="participant-avatar">+67</div>
-                            </div>
-                            <span>69 participants</span>
-                        </div>
-                        <button class="cta-button join-challenge">Join Challenge</button>
-                    </div>
-                </div>
-                
-                <div class="challenge-card">
-                    <div class="challenge-image" style="background: linear-gradient(135deg, #6A11CB, #2575FC);"></div>
-                    <div class="challenge-content">
-                        <h3 class="challenge-title">Youth Mentorship Initiative</h3>
-                        <p>Mentor young people in your community. Share your skills and experience.</p>
-                        <div class="challenge-meta">
-                            <span><i class="fas fa-clock"></i> 2 hours weekly</span>
-                            <span><i class="fas fa-map-marker-alt"></i> Nationwide</span>
-                        </div>
-                        <div class="challenge-participants">
-                            <div class="participant-avatars">
-                                <div class="participant-avatar">Y</div>
-                                <div class="participant-avatar">M</div>
-                                <div class="participant-avatar">+112</div>
-                            </div>
-                            <span>114 participants</span>
-                        </div>
-                        <button class="cta-button join-challenge">Join Challenge</button>
-                    </div>
-                </div>
+                <span>126 participants</span>
+              </div>
+              <button class="cta-button join-challenge">Join Challenge</button>
             </div>
+          </div>
+
+          <div class="challenge-card">
+            <div
+              class="challenge-image"
+              style="background: linear-gradient(135deg, #2196f3, #0b7dda)"
+            ></div>
+            <div class="challenge-content">
+              <h3 class="challenge-title">Tree Planting Campaign</h3>
+              <p>
+                Plant and nurture trees in your community. Make Ghana greener!
+              </p>
+              <div class="challenge-meta">
+                <span><i class="fas fa-clock"></i> 1 hour weekly</span>
+                <span><i class="fas fa-map-marker-alt"></i> 12 Regions</span>
+              </div>
+              <div class="challenge-participants">
+                <div class="participant-avatars">
+                  <div class="participant-avatar">M</div>
+                  <div class="participant-avatar">E</div>
+                  <div class="participant-avatar">+89</div>
+                </div>
+                <span>91 participants</span>
+              </div>
+              <button class="cta-button join-challenge">Join Challenge</button>
+            </div>
+          </div>
+
+          <div class="challenge-card">
+            <div
+              class="challenge-image"
+              style="background: linear-gradient(135deg, #ff6b35, #ff8e53)"
+            ></div>
+            <div class="challenge-content">
+              <h3 class="challenge-title">Digital Literacy Program</h3>
+              <p>
+                Teach digital skills to community members. Help bridge the
+                digital divide.
+              </p>
+              <div class="challenge-meta">
+                <span><i class="fas fa-clock"></i> 3 hours weekly</span>
+                <span><i class="fas fa-map-marker-alt"></i> Urban Areas</span>
+              </div>
+              <div class="challenge-participants">
+                <div class="participant-avatars">
+                  <div class="participant-avatar">D</div>
+                  <div class="participant-avatar">T</div>
+                  <div class="participant-avatar">+67</div>
+                </div>
+                <span>69 participants</span>
+              </div>
+              <button class="cta-button join-challenge">Join Challenge</button>
+            </div>
+          </div>
+
+          <div class="challenge-card">
+            <div
+              class="challenge-image"
+              style="background: linear-gradient(135deg, #6a11cb, #2575fc)"
+            ></div>
+            <div class="challenge-content">
+              <h3 class="challenge-title">Youth Mentorship Initiative</h3>
+              <p>
+                Mentor young people in your community. Share your skills and
+                experience.
+              </p>
+              <div class="challenge-meta">
+                <span><i class="fas fa-clock"></i> 2 hours weekly</span>
+                <span><i class="fas fa-map-marker-alt"></i> Nationwide</span>
+              </div>
+              <div class="challenge-participants">
+                <div class="participant-avatars">
+                  <div class="participant-avatar">Y</div>
+                  <div class="participant-avatar">M</div>
+                  <div class="participant-avatar">+112</div>
+                </div>
+                <span>114 participants</span>
+              </div>
+              <button class="cta-button join-challenge">Join Challenge</button>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Community Projects Gallery -->
     <section id="community-projects" class="section">
-        <div class="container">
-            <h2>Community Projects Gallery</h2>
-            <p class="section-subtitle">See the impact being made across Ghana</p>
-            
-            <div class="gallery-filters">
-                <button class="filter-btn active" data-filter="all">All Projects</button>
-                <button class="filter-btn" data-filter="environment">Environment</button>
-                <button class="filter-btn" data-filter="education">Education</button>
-                <button class="filter-btn" data-filter="community">Community</button>
-            </div>
-            
-            <div class="projects-grid">
-                <div class="project-card" data-category="environment">
-                    <div class="project-image">
-                        <div class="image-placeholder">🌳 Tree Planting</div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Accra Green Initiative</h3>
-                        <p>500+ trees planted in urban areas of Accra</p>
-                        <div class="project-stats">
-                            <span><i class="fas fa-users"></i> 45 volunteers</span>
-                            <span><i class="fas fa-calendar"></i> Completed</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="project-card" data-category="education">
-                    <div class="project-image">
-                        <div class="image-placeholder">💻 Digital Skills</div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Kumasi Digital Hub</h3>
-                        <p>Teaching digital skills to 200+ youth</p>
-                        <div class="project-stats">
-                            <span><i class="fas fa-users"></i> 28 volunteers</span>
-                            <span><i class="fas fa-calendar"></i> Ongoing</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="project-card" data-category="community">
-                    <div class="project-image">
-                        <div class="image-placeholder">🧹 Beach Cleanup</div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Takoradi Beach Cleanup</h3>
-                        <p>Removed 2 tons of plastic from beaches</p>
-                        <div class="project-stats">
-                            <span><i class="fas fa-users"></i> 89 volunteers</span>
-                            <span><i class="fas fa-calendar"></i> Completed</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="project-card" data-category="environment">
-                    <div class="project-image">
-                        <div class="image-placeholder">🌾 Sustainable Farming</div>
-                    </div>
-                    <div class="project-info">
-                        <h3>Northern Region Farming</h3>
-                        <p>Sustainable farming practices for 50 families</p>
-                        <div class="project-stats">
-                            <span><i class="fas fa-users"></i> 32 volunteers</span>
-                            <span><i class="fas fa-calendar"></i> Ongoing</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <h2>Community Projects Gallery</h2>
+        <p class="section-subtitle">See the impact being made across Ghana</p>
+
+        <div class="gallery-filters">
+          <button class="filter-btn active" data-filter="all">
+            All Projects
+          </button>
+          <button class="filter-btn" data-filter="environment">
+            Environment
+          </button>
+          <button class="filter-btn" data-filter="education">Education</button>
+          <button class="filter-btn" data-filter="community">Community</button>
         </div>
+
+        <div class="projects-grid">
+          <div class="project-card" data-category="environment">
+            <div class="project-image">
+              <div class="image-placeholder">🌳 Tree Planting</div>
+            </div>
+            <div class="project-info">
+              <h3>Accra Green Initiative</h3>
+              <p>500+ trees planted in urban areas of Accra</p>
+              <div class="project-stats">
+                <span><i class="fas fa-users"></i> 45 volunteers</span>
+                <span><i class="fas fa-calendar"></i> Completed</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-category="education">
+            <div class="project-image">
+              <div class="image-placeholder">💻 Digital Skills</div>
+            </div>
+            <div class="project-info">
+              <h3>Kumasi Digital Hub</h3>
+              <p>Teaching digital skills to 200+ youth</p>
+              <div class="project-stats">
+                <span><i class="fas fa-users"></i> 28 volunteers</span>
+                <span><i class="fas fa-calendar"></i> Ongoing</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-category="community">
+            <div class="project-image">
+              <div class="image-placeholder">🧹 Beach Cleanup</div>
+            </div>
+            <div class="project-info">
+              <h3>Takoradi Beach Cleanup</h3>
+              <p>Removed 2 tons of plastic from beaches</p>
+              <div class="project-stats">
+                <span><i class="fas fa-users"></i> 89 volunteers</span>
+                <span><i class="fas fa-calendar"></i> Completed</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card" data-category="environment">
+            <div class="project-image">
+              <div class="image-placeholder">🌾 Sustainable Farming</div>
+            </div>
+            <div class="project-info">
+              <h3>Northern Region Farming</h3>
+              <p>Sustainable farming practices for 50 families</p>
+              <div class="project-stats">
+                <span><i class="fas fa-users"></i> 32 volunteers</span>
+                <span><i class="fas fa-calendar"></i> Ongoing</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Partners Section -->
     <section id="partners" class="section bg-light">
-        <div class="container">
-            <h2>Trusted Partners</h2>
-            <p class="section-subtitle">We're proud to collaborate with these organizations</p>
-            
-            <div class="partners-grid">
-                <div class="partner-logo">UNDP Ghana</div>
-                <div class="partner-logo">Ministry of Environment</div>
-                <div class="partner-logo">Ghana Youth Authority</div>
-                <div class="partner-logo">Eco Ghana Foundation</div>
-            </div>
+      <div class="container">
+        <h2>Trusted Partners</h2>
+        <p class="section-subtitle">
+          We're proud to collaborate with these organizations
+        </p>
+
+        <div class="partners-grid">
+          <div class="partner-logo">UNDP Ghana</div>
+          <div class="partner-logo">Ministry of Environment</div>
+          <div class="partner-logo">Ghana Youth Authority</div>
+          <div class="partner-logo">Eco Ghana Foundation</div>
         </div>
+      </div>
     </section>
 
     <!-- Leaderboard Section -->
     <section id="leaderboard" class="section">
-        <div class="container">
-            <h2>Community Leaderboard</h2>
-            <p class="section-subtitle">See our top changemakers and get inspired</p>
-            
-            <div class="leaderboard-controls">
-                <div>
-                    <label for="region-filter">Filter by Region:</label>
-                    <select id="region-filter" class="region-filter">
-                        <option value="all">All Regions</option>
-                        <option value="greater-accra">Greater Accra</option>
-                        <option value="ashanti">Ashanti</option>
-                        <option value="western">Western</option>
-                    </select>
-                </div>
-            </div>
-            
-            <div class="leaderboard-table">
-                <div class="leaderboard-header">
-                    <div>Rank</div>
-                    <div>Name</div>
-                    <div>Region</div>
-                    <div>Badges</div>
-                    <div>Score</div>
-                </div>
-                <div class="leaderboard-row">
-                    <div class="rank">1</div>
-                    <div>Mary Western</div>
-                    <div>Western</div>
-                    <div><span class="badge-small">ECO EXPLORER</span></div>
-                    <div>180</div>
-                </div>
-                <div class="leaderboard-row">
-                    <div class="rank">2</div>
-                    <div>Kwame Ashanti</div>
-                    <div>Ashanti</div>
-                    <div><span class="badge-small">IMPACT LEADER</span></div>
-                    <div>165</div>
-                </div>
-                <div class="leaderboard-row">
-                    <div class="rank">3</div>
-                    <div>Hannah Greater</div>
-                    <div>Greater Accra</div>
-                    <div><span class="badge-small">COMMUNITY BUILDER</span></div>
-                    <div>152</div>
-                </div>
-            </div>
+      <div class="container">
+        <h2>Community Leaderboard</h2>
+        <p class="section-subtitle">
+          See our top changemakers and get inspired
+        </p>
+
+        <div class="leaderboard-controls">
+          <div>
+            <label for="region-filter">Filter by Region:</label>
+            <select id="region-filter" class="region-filter">
+              <option value="all">All Regions</option>
+              <option value="greater-accra">Greater Accra</option>
+              <option value="ashanti">Ashanti</option>
+              <option value="western">Western</option>
+            </select>
+          </div>
         </div>
+
+        <div class="leaderboard-table">
+          <div class="leaderboard-header">
+            <div>Rank</div>
+            <div>Name</div>
+            <div>Region</div>
+            <div>Badges</div>
+            <div>Score</div>
+          </div>
+          <div class="leaderboard-row">
+            <div class="rank">1</div>
+            <div>Mary Western</div>
+            <div>Western</div>
+            <div><span class="badge-small">ECO EXPLORER</span></div>
+            <div>180</div>
+          </div>
+          <div class="leaderboard-row">
+            <div class="rank">2</div>
+            <div>Kwame Ashanti</div>
+            <div>Ashanti</div>
+            <div><span class="badge-small">IMPACT LEADER</span></div>
+            <div>165</div>
+          </div>
+          <div class="leaderboard-row">
+            <div class="rank">3</div>
+            <div>Hannah Greater</div>
+            <div>Greater Accra</div>
+            <div><span class="badge-small">COMMUNITY BUILDER</span></div>
+            <div>152</div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Certificate Generator Section -->
     <section id="certificate-generator" class="section bg-light">
-        <div class="container">
-            <h2>Generate Your Certificate</h2>
-            <p class="section-subtitle">Create and download professional certificates for your achievements</p>
-            
-            <div class="certificate-generator">
-                <div class="certificate-form">
-                    <h3>Certificate Details</h3>
-                    <form id="certificate-form">
-                        <div class="form-group">
-                            <label for="certificate-name">Full Name *</label>
-                            <input type="text" id="certificate-name" name="certificate-name" required placeholder="Enter your full name">
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="certificate-badge">Achievement Badge *</label>
-                            <select id="certificate-badge" name="certificate-badge" required>
-                                <option value="">Select a badge</option>
-                                <option value="green-starter">GREEN STARTER</option>
-                                <option value="eco-explorer">ECO EXPLORER</option>
-                                <option value="community-builder">COMMUNITY BUILDER</option>
-                                <option value="impact-leader">IMPACT LEADER</option>
-                                <option value="climate-hero">CLIMATE HERO</option>
-                            </select>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="certificate-date">Achievement Date *</label>
-                            <input type="date" id="certificate-date" name="certificate-date" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="certificate-description">Description (Optional)</label>
-                            <textarea id="certificate-description" name="certificate-description" rows="3" placeholder="Describe your achievement..."></textarea>
-                        </div>
-                        
-                        <button type="submit" class="cta-button primary">Generate Certificate</button>
-                    </form>
+      <div class="container">
+        <h2>Generate Your Certificate</h2>
+        <p class="section-subtitle">
+          Create and download professional certificates for your achievements
+        </p>
+
+        <div class="certificate-generator">
+          <div class="certificate-form">
+            <h3>Certificate Details</h3>
+            <form id="certificate-form">
+              <div class="form-group">
+                <label for="certificate-name">Full Name *</label>
+                <input
+                  type="text"
+                  id="certificate-name"
+                  name="certificate-name"
+                  required
+                  placeholder="Enter your full name"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="certificate-badge">Achievement Badge *</label>
+                <select
+                  id="certificate-badge"
+                  name="certificate-badge"
+                  required
+                >
+                  <option value="">Select a badge</option>
+                  <option value="green-starter">GREEN STARTER</option>
+                  <option value="eco-explorer">ECO EXPLORER</option>
+                  <option value="community-builder">COMMUNITY BUILDER</option>
+                  <option value="impact-leader">IMPACT LEADER</option>
+                  <option value="climate-hero">CLIMATE HERO</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="certificate-date">Achievement Date *</label>
+                <input
+                  type="date"
+                  id="certificate-date"
+                  name="certificate-date"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="certificate-description"
+                  >Description (Optional)</label
+                >
+                <textarea
+                  id="certificate-description"
+                  name="certificate-description"
+                  rows="3"
+                  placeholder="Describe your achievement..."
+                ></textarea>
+              </div>
+
+              <button type="submit" class="cta-button primary">
+                Generate Certificate
+              </button>
+            </form>
+          </div>
+
+          <div class="certificate-preview">
+            <h3>Certificate Preview</h3>
+            <div class="certificate-design" id="certificate-preview">
+              <div class="certificate-border">
+                <div class="certificate-header">
+                  <div class="certificate-logo">
+                    <i class="fas fa-seedling"></i>
+                  </div>
+                  <h2>CERTIFICATE OF ACHIEVEMENT</h2>
                 </div>
-                
-                <div class="certificate-preview">
-                    <h3>Certificate Preview</h3>
-                    <div class="certificate-design" id="certificate-preview">
-                        <div class="certificate-border">
-                            <div class="certificate-header">
-                                <div class="certificate-logo">
-                                    <i class="fas fa-seedling"></i>
-                                </div>
-                                <h2>CERTIFICATE OF ACHIEVEMENT</h2>
-                            </div>
-                            
-                            <div class="certificate-body">
-                                <p>This is to certify that</p>
-                                <div class="recipient-name" id="preview-name">[Your Name]</div>
-                                <p>has successfully completed the</p>
-                                <div class="achievement-badge" id="preview-badge">[Achievement Badge]</div>
-                                <p>for outstanding contributions to community development and environmental sustainability in Ghana.</p>
-                                
-                                <div class="certificate-footer">
-                                    <div class="signature">
-                                        <div class="signature-line"></div>
-                                        <p>Director, Futureproof Ghana</p>
-                                    </div>
-                                    <div class="date" id="preview-date">[Date]</div>
-                                </div>
-                            </div>
-                        </div>
+
+                <div class="certificate-body">
+                  <p>This is to certify that</p>
+                  <div class="recipient-name" id="preview-name">
+                    [Your Name]
+                  </div>
+                  <p>has successfully completed the</p>
+                  <div class="achievement-badge" id="preview-badge">
+                    [Achievement Badge]
+                  </div>
+                  <p>
+                    for outstanding contributions to community development and
+                    environmental sustainability in Ghana.
+                  </p>
+
+                  <div class="certificate-footer">
+                    <div class="signature">
+                      <div class="signature-line"></div>
+                      <p>Director, Futureproof Ghana</p>
                     </div>
-                    
-                    <button id="download-certificate" class="cta-button secondary" style="display: none; margin-top: 20px;">Download Certificate</button>
+                    <div class="date" id="preview-date">[Date]</div>
+                  </div>
                 </div>
+              </div>
             </div>
+
+            <button
+              id="download-certificate"
+              class="cta-button secondary"
+              style="display: none; margin-top: 20px"
+            >
+              Download Certificate
+            </button>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Testimonials Section -->
     <section id="testimonials" class="section">
-        <div class="container">
-            <h2>Success Stories</h2>
-            <p class="section-subtitle">Hear from Ghanaians who are making a difference</p>
-            
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <p>"I've planted 50 trees in my community and earned the Eco Explorer badge. Futureproof Ghana helped me connect with neighbors I'd never met before!"</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">A</div>
-                        <div class="author-info">
-                            <h4>Adwoa Mensah</h4>
-                            <p>Kumasi • 6 badges earned</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <p>"Our community cleanup removed over 200kg of plastic waste. The certificate I earned helped me stand out in job applications."</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">K</div>
-                        <div class="author-info">
-                            <h4>Kwame Osei</h4>
-                            <p>Accra • Regional Leader</p>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <h2>Success Stories</h2>
+        <p class="section-subtitle">
+          Hear from Ghanaians who are making a difference
+        </p>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="testimonial-content">
+              <p>
+                "I've planted 50 trees in my community and earned the Eco
+                Explorer badge. Futureproof Ghana helped me connect with
+                neighbors I'd never met before!"
+              </p>
             </div>
+            <div class="testimonial-author">
+              <div class="author-avatar">A</div>
+              <div class="author-info">
+                <h4>Adwoa Mensah</h4>
+                <p>Kumasi • 6 badges earned</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-content">
+              <p>
+                "Our community cleanup removed over 200kg of plastic waste. The
+                certificate I earned helped me stand out in job applications."
+              </p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-avatar">K</div>
+              <div class="author-info">
+                <h4>Kwame Osei</h4>
+                <p>Accra • Regional Leader</p>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Signup Section -->
     <section id="signup" class="section bg-light">
-        <div class="container">
-            <h2>Join the Movement</h2>
-            <p class="section-subtitle">Start making a difference in your community today</p>
-            
-            <div class="signup-form">
-                <form id="registration-form">
-                    <div class="form-group">
-                        <label for="full-name">Full Name</label>
-                        <input type="text" id="full-name" name="full-name" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="email">Email Address</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="region">Region</label>
-                        <select id="region" name="region" required>
-                            <option value="">Select your region</option>
-                            <option value="greater-accra">Greater Accra</option>
-                            <option value="ashanti">Ashanti</option>
-                            <option value="western">Western</option>
-                            <option value="eastern">Eastern</option>
-                            <option value="central">Central</option>
-                        </select>
-                    </div>
-                    
-                    <button type="submit" class="cta-button primary">Create Account</button>
-                </form>
+      <div class="container">
+        <h2>Join the Movement</h2>
+        <p class="section-subtitle">
+          Start making a difference in your community today
+        </p>
+
+        <div class="signup-form">
+          <form id="registration-form">
+            <div class="form-group">
+              <label for="full-name">Full Name</label>
+              <input type="text" id="full-name" name="full-name" required />
             </div>
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+
+            <div class="form-group">
+              <label for="region">Region</label>
+              <select id="region" name="region" required>
+                <option value="">Select your region</option>
+                <option value="greater-accra">Greater Accra</option>
+                <option value="ashanti">Ashanti</option>
+                <option value="western">Western</option>
+                <option value="eastern">Eastern</option>
+                <option value="central">Central</option>
+              </select>
+            </div>
+
+            <button type="submit" class="cta-button primary">
+              Create Account
+            </button>
+          </form>
         </div>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <div class="footer-logo">
-                        <i class="fas fa-seedling"></i>
-                        Futureproof Ghana
-                    </div>
-                    <p>Small actions. Big impact. One Ghana.</p>
-                </div>
-                
-                <div class="footer-section">
-                    <h3>Quick Links</h3>
-                    <ul>
-                        <li><a href="#how-it-works">How It Works</a></li>
-                        <li><a href="#current-challenges">Challenges</a></li>
-                        <li><a href="#leaderboard">Leaderboard</a></li>
-                        <li><a href="#testimonials">Success Stories</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-section">
-                    <h3>Connect</h3>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <div class="footer-logo">
+              <i class="fas fa-seedling"></i>
+              Futureproof Ghana
             </div>
-            
-            <div class="footer-bottom">
-                <p>&copy; 2024 Futureproof Ghana. All rights reserved.</p>
+            <p>Small actions. Big impact. One Ghana.</p>
+          </div>
+
+          <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+              <li><a href="#how-it-works">How It Works</a></li>
+              <li><a href="#current-challenges">Challenges</a></li>
+              <li><a href="#leaderboard">Leaderboard</a></li>
+              <li><a href="#testimonials">Success Stories</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h3>Connect</h3>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
             </div>
+          </div>
         </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2024 Futureproof Ghana. All rights reserved.</p>
+        </div>
+      </div>
     </footer>
 
     <!-- Login Modal -->
     <div id="login-modal" class="modal">
-        <div class="modal-content">
-            <button class="close-modal">&times;</button>
-            <h2>Welcome Back</h2>
-            <form id="login-form">
-                <div class="form-group">
-                    <label for="login-email">Email Address</label>
-                    <input type="email" id="login-email" name="login-email" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="login-password">Password</label>
-                    <input type="password" id="login-password" name="login-password" required>
-                </div>
-                
-                <button type="submit" class="cta-button primary">Sign In</button>
-            </form>
-            
-            <div class="auth-links">
-                <p>Don't have an account? <a href="#signup" id="switch-to-signup">Sign up here</a></p>
-                <p><a href="#forgot-password">Forgot your password?</a></p>
-            </div>
+      <div class="modal-content">
+        <button class="close-modal">&times;</button>
+        <h2>Welcome Back</h2>
+        <form id="login-form">
+          <div class="form-group">
+            <label for="login-email">Email Address</label>
+            <input type="email" id="login-email" name="login-email" required />
+          </div>
+
+          <div class="form-group">
+            <label for="login-password">Password</label>
+            <input
+              type="password"
+              id="login-password"
+              name="login-password"
+              required
+            />
+          </div>
+
+          <button type="submit" class="cta-button primary">Sign In</button>
+        </form>
+
+        <div class="auth-links">
+          <p>
+            Don't have an account?
+            <a href="#signup" id="switch-to-signup">Sign up here</a>
+          </p>
+          <p><a href="#forgot-password">Forgot your password?</a></p>
         </div>
+      </div>
     </div>
 
+    <!-- hero-image ensures hero uses a PNG when available or converts SVG to PNG at runtime -->
+    <script src="js/hero-image.js"></script>
+    <!-- enhanced-script handles UI/auth/gallery; certificate-generator.js handles professional PNG certificates -->
     <script src="js/enhanced-script.js"></script>
     <script src="js/certificate-generator.js"></script>
-</body>
+  </body>
 </html>
